@@ -1,20 +1,10 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get, Post, Param } from '@nestjs/common';
 
-@Controller('episodes')
-export class EpisodesController {
+@Controller('')
+export class AppController {
 
-    @Get()
-    findAll() {
-        return 'all episodes'
-    }
-
-    @Get('featured')
-    findFeatured() {
-        return 'featured episodes'
-    }
-
-    @Post()
-        create() {
-            return 'create new episode'
-        }
+  @Get()
+  getHello() {
+    return 'Hello World!'
+  }
 }
